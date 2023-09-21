@@ -14,7 +14,8 @@ const client = new Client({
 
 new CommandKit({
     client,
-    eventsPath: path.join(__dirname, 'events')
+    eventsPath: path.join(__dirname, 'events'),
+    commandsPath: path.join(__dirname, 'commands'),
 })
 
 client.login(process.env.TOKEN)
